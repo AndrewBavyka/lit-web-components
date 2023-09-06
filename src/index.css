@@ -1,41 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 :root {
+  font-family: 'Inter', sans-serif;
+  --base-color: #3761E9;
   --input-background: #F3F4F9;
   --secondary-text: #919BB6;
-
-  font-family: 'Inter', sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --black-text: #55555A;
 }
 
 body {
   min-width: 320px;
   min-height: 100vh;
 }
-.wrapper{
+
+.wrapper {
   max-width: 1440px;
   margin: 0 auto;
 }
-.block{
+
+.block {
+  margin-top: 56px;
   display: flex;
   flex-direction: column;
   gap: 24px;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
 }

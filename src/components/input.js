@@ -37,15 +37,13 @@ export class Input extends LitElement {
         };
 
         return html`
-            <div >
-                <input
-                class=${classMap(classes)}
-                type="text"
-                name=${this.name}
-                id=${this.id}
-                placeholder=${this.placeholder}
-                />
-            </div>
+            <input
+            class=${classMap(classes)}
+            type="text"           
+            name=${this.name}
+            id=${this.id}
+            placeholder=${this.placeholder}
+            />
         `
     }
 
@@ -58,9 +56,16 @@ export class Input extends LitElement {
             color: var(--secondary-text);
             background: var(--input-background);
             }
-
+            .awc-input:focus-visible {
+                outline: 1px solid var(--secondary-text);
+            }
             .red {
                 background: red;
+                color: white;
+            }
+
+            .purple {
+                background: purple;
                 color: white;
             }
         `
