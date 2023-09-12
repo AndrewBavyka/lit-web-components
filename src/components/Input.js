@@ -27,13 +27,13 @@ export class Input extends LitElement {
 
     constructor() {
         super()
-        this.placeholder = 'Вставьте ссылку';
-    }
+        this.placeholder = '' || 'Вставьте ссылку';
+    }   
 
     render() {
         const classes = {
             'awc-input': true,
-            [this.color]: true, // добавляем класс, основанный на значении свойства color
+            [this.color]: true,
         };
 
         return html`
@@ -52,22 +52,22 @@ export class Input extends LitElement {
            .awc-input{
             padding: 13px 0 13px 16px;
             border-radius: 5px;
-            border: none;
-            color: var(--secondary-text);
-            background: var(--input-background);
+            border: 1px solid var(--secondary-text);
             }
             .awc-input:focus-visible {
                 outline: 1px solid var(--secondary-text);
             }
+            .default {
+                background: var(--input-background);
+            }
             .red {
                 background: red;
-                color: white;
             }
 
             .purple {
                 background: purple;
-                color: white;
             }
+
         `
     }
 }
